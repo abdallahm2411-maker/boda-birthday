@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#170d2b">
+<title>مفاجأة عيد ميلاد بودا 🎂</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;font-family:Tahoma,Arial,sans-serif;color:#fff;
+    background:radial-gradient(circle at 15% 15%,#633a86 0,transparent 30%),
+    radial-gradient(circle at 85% 80%,#9b315f 0,transparent 28%),linear-gradient(135deg,#100b20,#211039 55%,#381735);
+    display:grid;place-items:center;padding:22px;overflow-x:hidden}
+  .sparkles{position:fixed;inset:0;pointer-events:none;opacity:.45;
+    background-image:radial-gradient(#fff 1px,transparent 1px);background-size:42px 42px}
+  .card{width:min(100%,680px);padding:clamp(24px,5vw,48px);border:1px solid #ffffff35;
+    border-radius:28px;background:#ffffff12;backdrop-filter:blur(12px);
+    box-shadow:0 24px 80px #0006;text-align:center;position:relative}
+  .cake{font-size:58px;filter:drop-shadow(0 8px 15px #0005)}
+  h1{font-size:clamp(27px,6vw,42px);margin:12px 0;color:#ffe2a8}
+  .sub{color:#f2dff8;line-height:1.9;margin:0 auto 24px;max-width:480px}
+  input{width:100%;max-width:360px;padding:16px 18px;border-radius:14px;border:1px solid #ffffff55;
+    background:#fff;color:#261533;font-size:20px;text-align:center;outline:none}
+  input:focus{border-color:#ffd27d;box-shadow:0 0 0 3px #ffd27d30}
+  button{display:block;margin:15px auto 0;padding:14px 34px;border:0;border-radius:14px;
+    background:linear-gradient(135deg,#ffd27d,#ff9fbd);color:#32152c;font-weight:bold;font-size:17px;cursor:pointer}
+  button:hover{transform:translateY(-1px)}
+  .error{min-height:26px;color:#ffc4d2;margin:12px 0 0}
+  .message{display:none;text-align:right;margin-top:28px;line-height:2.15;font-size:17px;
+    color:#fff8fd;animation:appear .8s ease}
+  .message h2{text-align:center;color:#ffe2a8;font-size:clamp(25px,5vw,34px)}
+  .message .sign{text-align:center;color:#ffd4e5;font-weight:bold;font-size:19px;margin-top:22px}
+  .hidden{display:none}
+  .hearts{font-size:26px;text-align:center;letter-spacing:8px;margin:14px 0}
+  @keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  @media(max-width:480px){.card{border-radius:22px}.message{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="sparkles"></div>
+<main class="card">
+  <div id="gate">
+    <div class="cake">🎂</div>
+    <h1>في مفاجأة مستنياك يا بودا!</h1>
+    <p class="sub">بس قبل ما تدخل… لازم تثبت إنك صاحب المفاجأة 😄<br>اكتب كلمة المرور وافتح هديتك 🎁</p>
+    <form id="passwordForm">
+      <input id="password" type="password" inputmode="numeric" autocomplete="off"
+        placeholder="اكتب كلمة المرور هنا" aria-label="كلمة المرور">
+      <button type="submit">افتح المفاجأة ❤️</button>
+    </form>
+    <p class="error" id="error" aria-live="polite"></p>
+  </div>
+
+  <article class="message" id="message">
+    <div class="hearts">🎉 ❤️ 🎈 ❤️ 🎉</div>
+    <h2>كل سنة وأنت طيب يا بودا! 🎂</h2>
+    <p><strong>يا أخويا وصاحبي الغالي ❤️</strong></p>
+    <p>النهارده مش يوم عادي، النهارده يوم اتولد فيه شخص من الناس اللي وجودها في الدنيا لوحده حاجة جميلة. كل سنة وأنت طيب يا بودا، وكل سنة وأنت بخير وسعادة وراحة بال، وعقبال سنين كتير تحقق فيها كل اللي نفسك فيه وتشوف نفسك في المكان اللي بتحلم بيه.</p>
+    <p>عايز أقولك إنك مش مجرد صاحب بالنسبالي، أنت أخ وسند وواحد من الناس اللي الواحد بيبقى فخور إنه عرفهم. يمكن مش كل يوم بنقول لبعض كلام حلو، ويمكن ساعات بنهزر ونرخم على بعض، بس ده عمره ما يغير إن ليك معزة كبيرة عندي.</p>
+    <p>أتمنى السنة الجديدة من عمرك تكون مختلفة عن كل اللي فات، تكون سنة مليانة نجاح وفرحة وتحقيق أحلام، وسنة ربنا يعوضك فيها عن أي تعب شوفته، ويفرح قلبك بأكتر من اللي بتتمناه.</p>
+    <p>عايزك تفضل دايمًا بنفس روحك وضحكتك وجدعنتك، ومتخليش أي حاجة في الدنيا تطفي فرحتك أو تقلل من أحلامك. خليك واثق إن اللي جاي ممكن يكون أجمل بكتير، وإن كل حاجة حلوة تستاهل تستنى علشانها.</p>
+    <p>ويا رب مهما الأيام خدتنا ومهما انشغلنا، نفضل دايمًا على العهد، وتفضل بينا ذكريات ومواقف نحكيها ونضحك عليها حتى بعد سنين طويلة.</p>
+    <p>وفي يوم زي ده، مش هتمنالك بس سنة حلوة، أنا بتمنالك عمر كله حلو، وقلب مرتاح، وعقل هادي، وناس صافية حواليك، ونجاح يليق بيك.</p>
+    <p><strong>كل سنة وأنت أخويا يا بودا ❤️</strong><br>
+    كل سنة وأنت مكسر الدنيا، وكل سنة وأنت أقرب لأحلامك، وعقبال مليون سنة في فرحة ونجاح وسعادة.</p>
+    <p>وأخيرًا، افتكر دايمًا إن فيه ناس وجودها في حياتك مش صدفة، وإنك واحد من الناس اللي وجودهم بيفرق.</p>
+    <p class="sign">Happy Birthday يا بودا 🎂🥳❤️<br>ربنا يخليك ويفرح قلبك دايمًا يا صاحبي ❤️</p>
+    <div class="hearts">🎁 ✨ 🎊 ✨ 🎁</div>
+  </article>
+</main>
+<script>
+  const form = document.getElementById('passwordForm');
+  const input = document.getElementById('password');
+  const error = document.getElementById('error');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    if (input.value.trim() === '9112026') {
+      document.getElementById('gate').classList.add('hidden');
+      document.getElementById('message').style.display = 'block';
+      document.title = 'كل سنة وأنت طيب يا بودا ❤️';
+    } else {
+      error.textContent = 'مش هي دي كلمة السر يا بودا 😄 جرّب تاني!';
+      input.value = '';
+      input.focus();
+    }
+  });
+</script>
+</body>
+</html>
